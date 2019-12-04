@@ -1,5 +1,5 @@
 {% set name = "pixiedust" %}
-{% set version = "1.1.17" %}
+{% set version = "1.1.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 97d036ca6a31954bf8b27e5743e9309c04760cf2cf733bbf9afea9c81816b4cf
+  sha256: d2252c1fdb58ac0cd754bcd4c42f389864a4eacaba5ee2719552c1bcc2663662
 
 build:
   # cannot be noarch since there is an exe generated at the end.
