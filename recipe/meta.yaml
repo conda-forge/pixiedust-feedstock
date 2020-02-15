@@ -11,7 +11,7 @@ source:
 
 build:
   # cannot be noarch since there is an exe generated at the end.
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -31,7 +31,7 @@ requirements:
     # these aren't directly listed, but they directly import them...
     - numpy
     - pandas
-    - matplotlib
+    - matplotlib-base
     - bokeh
 
 test:
