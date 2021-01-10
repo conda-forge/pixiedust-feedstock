@@ -11,7 +11,7 @@ source:
 
 build:
   # cannot be noarch since there is an exe generated at the end.
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
