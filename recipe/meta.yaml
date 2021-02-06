@@ -10,7 +10,7 @@ source:
   sha256: 3d37ee70a2b1491ff2ae479fe1526841357a9cb962eafe835686231a98dd8da2
 
 build:
-  # cannot be noarch since there is an exe generated at the end.
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -28,7 +28,6 @@ requirements:
     - markdown
     - colour
     - requests
-    # these aren't directly listed, but they directly import them...
     - numpy
     - pandas
     - matplotlib-base
